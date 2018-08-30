@@ -5,7 +5,7 @@
 </div>
 
 <#macro content uid>
-	<#assign item = api.query("content").with("uid", uid).findFirst()>
+	<#assign item = api.query("content").with("uid", uid).findOne()>
 	<h2>${item.getText("title")}</h2>
 	<p>
 		${item.getRichText("content").html}

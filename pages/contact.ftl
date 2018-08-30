@@ -10,7 +10,7 @@
 </div>
 
 <#macro content uid>
-	<#assign item = api.query("content").with("uid", uid).findFirst()>
+	<#assign item = api.query("content").with("uid", uid).findOne()>
 	<h2>${item.getText("title")}</h2>
 	<p>
 		${item.getRichText("content").html}
@@ -18,7 +18,7 @@
 </#macro>
 
 <#macro menu uid>
-	<#assign menu = api.query("menu").with("uid", uid).findFirst()>
+	<#assign menu = api.query("menu").with("uid", uid).findOne()>
 	<h2>${menu.getText("title")}</h2>
 	<div id="carousel-wide" class="carousel slide hidden-xs" data-interval="false">
 		<div class="carousel-inner">
