@@ -16,13 +16,7 @@
 				<span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 		</div>
-	</div>
-</div>
-<div class="row">
-	<div class="col-sm-6">
 		<@content "welcome"/>
-	</div>
-	<div class="col-sm-6">
 		<@content "openingsuren"/>
 	</div>
 </div>
