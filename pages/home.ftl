@@ -1,3 +1,5 @@
+<#include "/pages/_init.ftl">
+
 <div class="row">
 	<div class="col-sm-12">
 		<div id="carousel" class="carousel slide" data-ride="carousel" style="margin-top: 20px">
@@ -20,11 +22,3 @@
 		<@content "openingsuren"/>
 	</div>
 </div>
-
-<#macro content uid>
-	<#assign item = api.query("content").with("uid", uid).findOne()>
-	<h2>${item.getText("title")}</h2>
-	<p>
-		${item.getRichText("content").html}
-	</p>
-</#macro>
