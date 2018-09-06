@@ -12,7 +12,7 @@
 	<div id="carousel-wide" class="carousel slide hidden-xs" data-interval="false">
 		<div class="carousel-inner">
 			<#assign pages = menu.getGroup("pages")>
-			<#assign blocks = (pages?size / 2) + 1>
+			<#assign blocks = (pages?size / 2)?ceiling>
 			<#list 0..(blocks-1) as i>
 				<div class="item <#if i?index == 0>active</#if>">
 					<img src="${pages[i*2].getImage("page").url}" class="img-responsive" style="display: inline; width:49.5%">

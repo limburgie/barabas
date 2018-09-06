@@ -6,6 +6,11 @@
 		"repositoryId": "https://barabas.cdn.prismic.io/api"
 	},
 
+	"locationSettings": {
+		"locale": "nl_BE",
+		"timeZone": "Europe/Brussels"
+	},
+
 	"templates": [
 		{
 			"name": "base",

@@ -4,6 +4,6 @@
 	<div class="col-sm-12">
 		<@content "tapas"/>
 
-		<@menu "dranken"/>
+		<@menu "tapas"/>
 	</div>
 </div>
