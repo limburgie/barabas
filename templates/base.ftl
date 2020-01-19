@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="${site.name}">
 	<meta name="author" content="Web Factor">
+	<meta name="robots" content="noindex">
+
 	<link rel="icon" href="/assets/img/favicon.png">
 
 	<title>${site.name}</title>
